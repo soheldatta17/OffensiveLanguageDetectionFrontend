@@ -28,7 +28,7 @@ export default function App() {
       console.log("Data type of sentences is", typeof result.sentences);
 
       const response = await axios.post<Response>(
-        'http://192.168.29.252:3000/check',
+        'https://offensivelanguagedetectionbackend.onrender.com/check',
         { sentences: result.sentences }
       );
 
@@ -56,7 +56,7 @@ export default function App() {
         .slice(0, 10);
       console.log("Data type of sentences is", typeof (sentences))
       const response = await axios.post<Response>(
-        'http://192.168.29.252:3000/check',
+        'https://offensivelanguagedetectionbackend.onrender.com/check',
         { sentences: sentences }
       );
 
